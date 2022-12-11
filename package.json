@@ -1,0 +1,42 @@
+{
+  "name": "dao-taskpay-contract",
+  "version": "0.0.1",
+  "scripts": {
+    "test": "npx hardhat test",
+    "compile": "npx hardhat compile",
+    "flatten": "npx hardhat flatten",
+    "coverage": "npx hardhat coverage",
+    "solhint": "solhint src/**/*.sol",
+    "deploy:localhost": "npx hardhat run --network localhost scripts/deploy.ts",
+    "deploy:goerli": "npx hardhat run --network goerli scripts/deploy.ts"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@ensdomains/ens-contracts": "^0.0.11",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.6",
+    "@nomiclabs/hardhat-ethers": "2.0.2",
+    "@nomiclabs/hardhat-waffle": "2.0.1",
+    "@nomiclabs/hardhat-web3": "^2.0.0",
+    "@openzeppelin/contracts": "4.7.2",
+    "@typechain/ethers-v5": "^10.1.0",
+    "@typechain/hardhat": "^6.1.3",
+    "chai": "4.3.4",
+    "dotenv": "^8.2.0",
+    "ethereum-waffle": "3.4.0",
+    "ethers": "5.5.2",
+    "hardhat": "2.7.0",
+    "hardhat-abi-exporter": "2.3.1",
+    "hardhat-gas-reporter": "^1.0.8",
+    "solhint": "3.3.6",
+    "solidity-coverage": "0.7.17",
+    "ts-node": "^10.9.1",
+    "typechain": "^8.1.0",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "@nomiclabs/hardhat-etherscan": "^3.1.0",
+    "@types/mocha": "^10.0.0",
+    "erc721a": "^4.2.3",
+    "hardhat-contract-sizer": "^2.6.1"
+  }
+}
